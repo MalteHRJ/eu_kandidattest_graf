@@ -81,7 +81,6 @@ let targetClicked = false;
       dy < particle.radius &&
       dy > -particle.radius
     ) {
-      console.log("clicked " + particle.id);
       particle.isCurrent = true;
       targetClicked = true;
       addInfo(particle.id);
@@ -92,7 +91,6 @@ let targetClicked = false;
   }
 }
 async function addInfo(id) {
-  console.log(id);
   const info = document.getElementById("Info");
   if (id == null) {
     info.dataset.show = "false";
@@ -134,7 +132,6 @@ async function main() {
   canvas.addEventListener("mouseup", () => {
     currentParticle = null;
   });
-  console.log(springs.length);
 }
 
 main();
