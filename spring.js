@@ -3,7 +3,7 @@ class Spring {
       this.weight = weight;
       this.a = a;
       this.b = b;
-      this.restLength = (450 - 15 * this.weight)+100;
+      this.restLength = (400 - 11 * this.weight)+100;
    }
    update() {
       const k = this.weight / 10000;

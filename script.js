@@ -68,7 +68,7 @@ function springConsstructor(weight, originNode, targetNode) {
 }
 function clickEvent(e) {
   const mousePos = { x: e.offsetX, y: e.offsetY };
-let targetClicked = false;
+  let targetClicked = false;
   particles.forEach((particle) => {
     const dx = particle.position.x - mousePos.x;
     const dy = particle.position.y - mousePos.y;
